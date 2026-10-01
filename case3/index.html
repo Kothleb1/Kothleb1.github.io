@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Редизайн продаж бренда одежды: переход из VK на собственный сайт, рост выручки и среднего чека." />
+    <link rel="canonical" href="https://timofeypronchatov.vercel.app/case3" />
+    <meta name="theme-color" content="#fb9319" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Тимофей Прончатов" />
+    <meta property="og:title" content="От VK к бренд-сайту — кейс Тимофея Прончатова" />
+    <meta property="og:description" content="Редизайн продаж бренда одежды: переход из VK на собственный сайт, рост выручки и среднего чека." />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:url" content="https://timofeypronchatov.vercel.app/case3" />
+    <!-- Абсолютный URL обязателен: относительный путь резолвят не все краулеры
+         и превью-боты мессенджеров. -->
+    <meta property="og:image" content="https://timofeypronchatov.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Тимофей Прончатов — продуктовый дизайнер" />
+    <meta name="twitter:image" content="https://timofeypronchatov.vercel.app/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>От VK к бренд-сайту — кейс Тимофея Прончатова</title>
+    <!-- Текстовая версия сайта для LLM-агентов: страницы CSR-ные, без JS краулер
+         видит пустой #root (см. scripts/prerender-head.mjs). -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Текстовая версия для LLM" />
+    <!-- Person / WebSite / ProfilePage: связывает имя, роль, навыки и профили.
+         Даёт поисковику и AI-краулеру понять, что сайт — портфолио конкретного
+         человека, а не безымянный лендинг. Кейсы добавляют свой CreativeWork
+         на этапе сборки — там же лежат тексты (scripts/seo-content.mjs). -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://timofeypronchatov.vercel.app/#person",
+            "name": "Тимофей Прончатов",
+            "alternateName": "Timofey Pronchatov",
+            "jobTitle": "Продуктовый дизайнер",
+            "description": "Продуктовый дизайнер: B2B, B2E, SaaS, финтех, e-commerce. Веду продукт целиком — интервью и опросы, гипотезы, сценарии, интерфейс, прототип, юзабилити-тест, метрика. Сильная сторона — сложные рабочие интерфейсы: большие таблицы, глубокая вложенность, многошаговые сценарии, онбординг и регистрация. Довожу дизайн до кода: портфолио написано самостоятельно на React и TypeScript.",
+            "url": "https://timofeypronchatov.vercel.app/",
+            "image": "https://timofeypronchatov.vercel.app/hero/mainface.webp",
+            "email": "mailto:pronchatovtim@gmail.com",
+            "knowsLanguage": [
+              {"@type": "Language", "name": "Русский", "alternateName": "ru"},
+              {"@type": "Language", "name": "Английский — B1", "alternateName": "en"}
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Нижний Новгород",
+              "addressCountry": "RU"
+            },
+            "alumniOf": [
+              {
+                "@type": "EducationalOrganization",
+                "name": "Волжская государственная академия водного транспорта"
+              },
+              {
+                "@type": "EducationalOrganization",
+                "name": "Formfactor — курсы продуктового дизайна"
+              }
+            ],
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "Продуктовый дизайнер",
+              "occupationalCategory": "Product Designer, UX/UI Designer",
+              "skills": "продуктовый дизайн, UX-исследования, глубинные интервью, юзабилити-тестирование, бенчмаркинг, JTBD, Customer Journey Map, user flow, информационная архитектура, прототипирование, MVP, дизайн-системы, Atomic Design, дизайн-токены, адаптивный дизайн, доступность, метрики продукта, Time-to-Value, конверсия, прокси-метрики Time-to-task и Error Rate, подготовка решений к A/B-тестированию, Figma, React, TypeScript, вёрстка, AI-assisted design"
+            },
+            "knowsAbout": [
+              "продуктовый дизайн",
+              "UX/UI",
+              "UX-исследования",
+              "дизайн-системы",
+              "B2B SaaS",
+              "B2E",
+              "enterprise-интерфейсы",
+              "финтех",
+              "e-commerce",
+              "adtech",
+              "edtech-платформы (конкурентный анализ)",
+              "телеком",
+              "task management",
+              "BPM",
+              "онбординг и регистрация",
+              "работа с большими таблицами",
+              "метрики продукта"
+            ],
+            "sameAs": [
+              "https://t.me/Kothleb1",
+              "https://www.instagram.com/timofey.pronchatov"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://timofeypronchatov.vercel.app/#website",
+            "url": "https://timofeypronchatov.vercel.app/",
+            "name": "Тимофей Прончатов — портфолио продуктового дизайнера",
+            "inLanguage": "ru",
+            "author": {"@id": "https://timofeypronchatov.vercel.app/#person"},
+            "publisher": {"@id": "https://timofeypronchatov.vercel.app/#person"}
+          },
+          {
+            "@type": "ProfilePage",
+            "url": "https://timofeypronchatov.vercel.app/",
+            "mainEntity": {"@id": "https://timofeypronchatov.vercel.app/#person"},
+            "isPartOf": {"@id": "https://timofeypronchatov.vercel.app/#website"}
+          }
+        ]
+      }
+    </script>
+    <!-- Yandex.Metrika: загрузчик тега (init/hit — в src/lib/metrika.ts) -->
+    <script>
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < e.scripts.length; j++) {
+          if (e.scripts[j].src === r) return;
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    </script>
+    <script type="module" crossorigin src="/assets/index-Dma7lSir.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C1T-uJUV.css">
+      <meta name="twitter:title" content="От VK к бренд-сайту — кейс Тимофея Прончатова" />
+      <meta name="twitter:description" content="Редизайн продаж бренда одежды: переход из VK на собственный сайт, рост выручки и среднего чека." />
+      <meta name="keywords" content="B2C, e-commerce, бренд, лендинг, checkout, cross-sell, конверсия" />
+      <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "CreativeWork",
+        "Article"
+      ],
+      "@id": "https://timofeypronchatov.vercel.app/case3#case",
+      "name": "От VK к бренд-сайту",
+      "headline": "От VK к бренд-сайту",
+      "abstract": "Редизайн продаж бренда одежды: переход из VK на собственный сайт, рост выручки и среднего чека.",
+      "description": "Редизайн продаж бренда одежды: переход из VK на собственный сайт, рост выручки и среднего чека.",
+      "text": "Воронка продажи билетов и мерча: переход бренда из ВКонтакте на собственный сайт. Роль: продуктовый дизайнер.\n\nИдея. Собственный лендинг и мерч-шоп для российской альтернативной рок-группы дают контроль над каналом продаж, объединяют билеты и мерч (рост среднего чека) и снимают зависимость от ВК, где не хватает аналитики и e-commerce-инструментов.\n\nОбоснование на данных. Продажи через сообщество ВК ограничены: узкий каталог, неудобный чек-аут, слабая аналитика. В российском e-commerce доля брошенных корзин — 70–81%. Офлайн-события растут, покупка билетов онлайн даёт точку контакта, где уместно предложить мерч.\n\nЦели и их обоснование: рост выручки онлайн-канала на 20–25% за первые 12 месяцев; конверсия сайта 3,0% за 6 месяцев при отраслевом бенчмарке fashion e-commerce 2,9–3,3%; снижение брошенных корзин с 75–80% до 55–60%; рост среднего чека на 20% за счёт кросс-продаж билет + мерч; база из 1000 подписчиков за 6 месяцев. Для каждой цели зафиксирован уровень уверенности.\n\nЦелевая аудитория. По данным ВЦИОМ рок слушают около 24% россиян, среди зумеров и младших миллениалов — около 39%, то есть ядро в возрасте 18–35 лет. Подтверждено анализом сообществ во ВКонтакте и Telegram.\n\nБенчмаркинг. Разобраны магазины Little Big, Мумий Тролль, LOUNA, IC3PEAK, Lady Gaga по осям: брендинг, ассортимент мерча, продажа билетов, корзина, доставка и оплата, личный кабинет.\n\nВыводы для архитектуры. Ассортимент: унисекс-футболка, худи, тоут, пин, винил, базовый плюс лимитированные позиции. Доставка: CDEK и Почта России с трекингом в письме. Платежи: локальные шлюзы, СБП, карты, Apple и Google Pay. Билеты: афиша на лендинге с переходом на кассу и опцией пресейла при покупке мерча. Гостевой чек-аут снижает отток корзин на 23–30%, профиль нужен для пресейла и повторных покупок. Ключевой UX-приём — кросс-продажа билетов и мерча.\n\nМетоды: продуктовое обоснование на данных, постановка целей и метрик, бенчмаркинг, проектирование e-commerce-архитектуры, checkout, брендинг, адаптив.",
+      "keywords": "B2C, e-commerce, бренд, лендинг, checkout, cross-sell, конверсия",
+      "inLanguage": "ru",
+      "url": "https://timofeypronchatov.vercel.app/case3",
+      "author": {
+        "@id": "https://timofeypronchatov.vercel.app/#person"
+      },
+      "creator": {
+        "@id": "https://timofeypronchatov.vercel.app/#person"
+      },
+      "isPartOf": {
+        "@id": "https://timofeypronchatov.vercel.app/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Портфолио",
+          "item": "https://timofeypronchatov.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "От VK к бренд-сайту",
+          "item": "https://timofeypronchatov.vercel.app/case3"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+      <noscript>
+      <h1>От VK к бренд-сайту</h1>
+      <p>Воронка продажи билетов и мерча: переход бренда из ВКонтакте на собственный сайт. Роль: продуктовый дизайнер.</p>
+      <p>Идея. Собственный лендинг и мерч-шоп для российской альтернативной рок-группы дают контроль над каналом продаж, объединяют билеты и мерч (рост среднего чека) и снимают зависимость от ВК, где не хватает аналитики и e-commerce-инструментов.</p>
+      <p>Обоснование на данных. Продажи через сообщество ВК ограничены: узкий каталог, неудобный чек-аут, слабая аналитика. В российском e-commerce доля брошенных корзин — 70–81%. Офлайн-события растут, покупка билетов онлайн даёт точку контакта, где уместно предложить мерч.</p>
+      <p>Цели и их обоснование: рост выручки онлайн-канала на 20–25% за первые 12 месяцев; конверсия сайта 3,0% за 6 месяцев при отраслевом бенчмарке fashion e-commerce 2,9–3,3%; снижение брошенных корзин с 75–80% до 55–60%; рост среднего чека на 20% за счёт кросс-продаж билет + мерч; база из 1000 подписчиков за 6 месяцев. Для каждой цели зафиксирован уровень уверенности.</p>
+      <p>Целевая аудитория. По данным ВЦИОМ рок слушают около 24% россиян, среди зумеров и младших миллениалов — около 39%, то есть ядро в возрасте 18–35 лет. Подтверждено анализом сообществ во ВКонтакте и Telegram.</p>
+      <p>Бенчмаркинг. Разобраны магазины Little Big, Мумий Тролль, LOUNA, IC3PEAK, Lady Gaga по осям: брендинг, ассортимент мерча, продажа билетов, корзина, доставка и оплата, личный кабинет.</p>
+      <p>Выводы для архитектуры. Ассортимент: унисекс-футболка, худи, тоут, пин, винил, базовый плюс лимитированные позиции. Доставка: CDEK и Почта России с трекингом в письме. Платежи: локальные шлюзы, СБП, карты, Apple и Google Pay. Билеты: афиша на лендинге с переходом на кассу и опцией пресейла при покупке мерча. Гостевой чек-аут снижает отток корзин на 23–30%, профиль нужен для пресейла и повторных покупок. Ключевой UX-приём — кросс-продажа билетов и мерча.</p>
+      <p>Методы: продуктовое обоснование на данных, постановка целей и метрик, бенчмаркинг, проектирование e-commerce-архитектуры, checkout, брендинг, адаптив.</p>
+      <p><a href="/case1">Трансформация BPM-данных в эффективное приложение</a> · <a href="/case2">Решение большой вложенности</a> · <a href="/case4">Racktables</a> · <a href="/case3">От VK к бренд-сайту</a> · <a href="/case5">Регистрация в Почта Банке</a> · <a href="/case6">Управление интернет-рекламой</a> · <a href="/">Главная</a></p>
+      <p>Контакты: <a href="https://t.me/Kothleb1">Telegram</a>, <a href="mailto:pronchatovtim@gmail.com">pronchatovtim@gmail.com</a></p>
+    </noscript>
+  </body>
+</html>

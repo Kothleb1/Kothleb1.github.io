@@ -1,0 +1,61 @@
+User-agent: *
+Allow: /
+
+# Заглушки без контента (case7/case8) закрыты через <meta name="robots" content="noindex">
+# в рантайме — см. src/lib/seo.ts. Здесь их не перечисляем, чтобы не плодить
+# два источника правды.
+
+# AI-краулеры перечислены явно. Формально их покрывает `User-agent: *` выше, но
+# часть агентов считает отсутствие своей секции поводом не ходить на сайт —
+# портфолио, наоборот, должно попадать в ответы ассистентов.
+# Текстовая выжимка для них: /llms.txt и /llms-full.txt.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://timofeypronchatov.vercel.app/sitemap.xml
